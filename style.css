@@ -18,11 +18,7 @@ body {
 }
 
 @media screen and (min-width: 701px) and (max-width: 900px) {
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
 
     .container .row .col h2 {
         font-size: 50px;
@@ -140,11 +136,7 @@ hr {
 
 @media (max-width: 700px) {
 
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
 
     .nav-links ul li {
         display: block;
@@ -294,11 +286,7 @@ hr {
     .page-3 .container h1 {
         font-size: 40px;
     }
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
 }
 
 
@@ -369,11 +357,10 @@ hr {
     .page-4 .container .grid-item p, .page-5 .container .grid-item p {
         font-size: 20px;
     }
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
+
+
+
 }
 
 /*page 5 css */
@@ -416,11 +403,7 @@ hr {
     .page-6 .container .row col {
         flex-direction: row;
     }
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
 }
 
 /*page 7 */
@@ -429,7 +412,7 @@ hr {
 .page-7 .container .row .col {
     margin-top: 100px;
     width: 100%;
-
+    width: 700px;
 }
 
 .page-7 .container .row .col h3 {
@@ -453,11 +436,7 @@ hr {
         margin-top: 50px;
 
     }
-    .container {
-        margin: 0;
-        min-height: auto;
-        margin-bottom: 10px;
-    }
+
     .page-7 .container .row .col h3 {
         font-size: 1.4rem;
         margin-top: 10px;
@@ -467,4 +446,43 @@ hr {
         color: #544541;
         font-size: 1rem;
     }
+    .page-7 .container .row .col  {
+        width: 200px ;
+    }
+
+    img{
+        width: 200px ;
+    }
+
+    .page-4 .container .grid-item , .page-5 .container .grid-item  , .page-5 .container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page-6 .container .row{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .page-6 .container {
+
+        margin: 0;
+
+    }
+
+    .page-6 .container .row .col {
+         font-size: 1rem;
+        padding: 20px 20px;
+    }
+
+    .container{
+        margin:  0 ;
+    }
 }
+
