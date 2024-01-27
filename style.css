@@ -20,6 +20,8 @@ body {
 @media screen and (min-width: 701px) and (max-width: 900px) {
     .container {
         margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
     }
 
     .container .row .col h2 {
@@ -140,6 +142,8 @@ hr {
 
     .container {
         margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
     }
 
     .nav-links ul li {
@@ -290,6 +294,11 @@ hr {
     .page-3 .container h1 {
         font-size: 40px;
     }
+    .container {
+        margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -360,6 +369,11 @@ hr {
     .page-4 .container .grid-item p, .page-5 .container .grid-item p {
         font-size: 20px;
     }
+    .container {
+        margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 /*page 5 css */
@@ -402,6 +416,11 @@ hr {
     .page-6 .container .row col {
         flex-direction: row;
     }
+    .container {
+        margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 /*page 7 */
@@ -434,7 +453,11 @@ hr {
         margin-top: 50px;
 
     }
-
+    .container {
+        margin: 0;
+        min-height: auto;
+        margin-bottom: 10px;
+    }
     .page-7 .container .row .col h3 {
         font-size: 1.4rem;
         margin-top: 10px;
