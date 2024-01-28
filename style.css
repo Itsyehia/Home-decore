@@ -483,6 +483,9 @@ height: 80vh;
     .pageSix h1 {
         font-size: 40px;
     }
+    .pageSix {
+        height: auto;
+    }
 }
 
 @media (max-width: 500px) {
@@ -546,6 +549,9 @@ height: 80vh;
 
     .pageSevenText h3 {
         font-size: 15px;
+    }
+    .pageSeven {
+        height: auto;
     }
 }
 
