@@ -416,9 +416,9 @@ nav .fa-times {
 
 .pageFive {
     /*padding-bottom: 100px;*/
-    height: 100vh;
+/*     height: 100vh;
+} */
 }
-
 @media (max-width: 700px) {
 
     .pageFive .text-box h1 {
@@ -427,7 +427,6 @@ nav .fa-times {
     }
 
     .pageFive {
-        height: auto;
     }
 
     .pageFive h3 {
@@ -449,9 +448,7 @@ nav .fa-times {
     .pageFive .row {
         flex-wrap: wrap;
     }
-     .pageFive  {
-        height: auto;
-    }
+    
 }
 
 /*End of Page 5 page css */
@@ -459,7 +456,6 @@ nav .fa-times {
 /*Page 6 css */
 
 .pageSix {
-height: 80vh;
     background: #ECEADA;
 }
 
@@ -489,7 +485,6 @@ height: 80vh;
         font-size: 40px;
     }
     .pageSix {
-height: auto;
     background: #ECEADA;
 }
 }
@@ -509,7 +504,6 @@ height: auto;
     margin: auto;
     text-align: left;
     padding-top: 50px;
-    height: auto;
 }
 
 .pageSevenText-col {
@@ -557,9 +551,7 @@ height: auto;
         font-size: 15px;
     }
 
-    .pageSeven {
-        height: auto;
-    }
+    
 
 }
 
