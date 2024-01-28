@@ -3,38 +3,10 @@
     padding: 0;
 }
 
-body {
-    width: 100%;
-}
-
-.container {
+.header {
     min-height: 100vh;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
     position: relative;
-    /*margin-left: 20px;*/
-    overflow: hidden;
-    margin: 0 90px;
-}
-
-@media screen and (min-width: 701px) and (max-width: 900px) {
-
-
-    .container .row .col h2 {
-        font-size: 50px;
-    }
-
-    .container .row .col button {
-        font-size: 15px;
-    }
-
-    .second .container h2 {
-        font-size: 50px;
-    }
-
-    .second .container .row .col p {
-        font-size: 15px;
-    }
 }
 
 nav {
@@ -63,7 +35,41 @@ nav {
 }
 
 .nav-links ul li:hover {
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+.text-box {
+    width: 90%;
+    color: #473C38;
+    /*border: 1px solid black;*/
+    margin: auto;
+}
+
+.text-box h1 {
+    font-size: 40px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #473C38;
+    border: 1px solid #473C38;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #473C38;
+    background: beige;
+    transition: 0.5s;
 }
 
 nav .fa {
@@ -75,68 +81,63 @@ nav .fa-times {
     padding-top: 10px;
 }
 
-h1 {
-    color: #473C38;
 
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+/*----first page image and text css--------*/
 
-
-hr {
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.pageOneText {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .row {
+    margin-top: 5%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageOneText-col {
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black ;*/
+}
+
+.pageOneText img {
     width: 100%;
-    justify-content: space-around;
+    display: block;
 }
 
-.col {
-    width: 50%;
-    margin-left: 50px;
-}
-
-.col h2 {
-    color: #735E59;
-    font-size: 72px;
-    width: 100%;
-    line-height: 1.5;
-    margin-top: 30px;
-}
-
-.col img {
-    display: flex;
-    justify-items: right;
-    max-width: 100%;
-    min-width: 400px;
-}
-
-.container button {
-    margin-top: 40px;
-    /*margin-left: 200px;*/
-    font-size: 20px;
-    border: 1px solid black;
-    color: #735E59;
-    padding: 20px 50px;
-    background: transparent;
-}
-
-.container button:hover {
-    transition: 0.5s;
-    cursor: pointer;
-    background: bisque;
-
+.pageOneText p {
+    font-size: 40px;
+    color: #473C38;
+    line-height: 2;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .pageOneText p {
+        font-size: 30px;
+    }
+}
+
+/*----End of the first page image and text css--------*/
 
 
+/*first page css */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
 
     .nav-links ul li {
         display: block;
@@ -144,11 +145,11 @@ hr {
 
     .nav-links {
         position: absolute;
-        background: blanchedalmond;
+        background: beige;
         height: 100vh;
         width: 200px;
         top: 0;
-        left: -200px;
+        left: -200px; /* Adjusted to make the menu appear on the right side */
         text-align: left;
         z-index: 2;
         transition: 0.3s;
@@ -165,324 +166,387 @@ hr {
     .nav-links ul {
         padding: 30px;
     }
+}
 
+/*End of the first page css */
+
+
+/*Page 2 css */
+
+.pageTwo {
+    background: #ECEADA;
+    border: 1px solid black;
+    /*padding-bottom: 100px;*/
+    height: 100vh;
+
+}
+
+.pageTwoText {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.pageTwoText-col {
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black ;*/
+}
+
+.pageTwoText img {
+    width: 100%;
+    display: block;
+}
+
+.pageTwoText p {
+    font-size: 60px;
+    color: #473C38;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.pageTwoText h2 {
+    font-size: 25px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-weight: lighter;
+}
+
+@media (max-width: 1300px) {
+    .pageTwoText p {
+        font-size: 50px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 900px) {
+    .pageTwoText p {
+        font-size: 45px;
+    }
+
+    .pageTwoText h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .pageTwo .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
     .row {
         flex-direction: column;
-        gap: 10px;
     }
 
-    .col h2 {
+    .pageTwoText p {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .pageTwo {
+        height: auto;
+    }
+
+}
+
+/*End of Page 2 page css */
+
+/*Page 3 css */
+
+.pageThree .text-box h1 {
+    padding-top: 100px;
+}
+
+.pageThree h3 {
+    color: #544541;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.pageThree h2 {
+    font-size: 20px;
+    color: #544541;
+    letter-spacing: 2px;
+}
+
+.pageThree {
+    /*padding-bottom: 100px;*/
+    height: auto;
+    padding-bottom: 100px;
+
+}
+
+@media (max-width: 700px) {
+
+    .pageThree .text-box h1 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .pageThree .text-box h1 {
+        font-size: 30px;
+    }
+
+}
+
+/*End of Page 3 page css */
+
+
+/*Page 4 css */
+
+.pageThreeText {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+    /*border: 1px solid black;*/
+}
+
+.pageThreeText-col {
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black ;*/
+}
+
+.pageThreeText img {
+    width: 80%;
+    display: block;
+}
+
+.pageFour .text-box h1 {
+    padding-top: 100px;
+}
+
+.pageFour h3 {
+    color: #544541;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.pageFour h2 {
+    font-size: 30px;
+    color: #544541;
+    letter-spacing: 2px;
+
+}
+
+.pageFour {
+    /*padding-bottom: 100px;*/
+    height: 100vh;
+    background: #ECEADA;
+}
+
+@media (max-width: 700px) {
+
+    .pageFour .text-box h1 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+
+    .pageFour {
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .pageFour .text-box h1 {
+        font-size: 30px;
+    }
+
+}
+
+/*End of Page 4 page css */
+
+/*Page 5 css */
+
+.pageFiveText {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+    /*border: 1px solid black;*/
+}
+
+.pageFiveText-col {
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black ;*/
+}
+
+.pageFiveText img {
+    width: 80%;
+    display: block;
+}
+
+.pageFive .text-box h1 {
+    padding-top: 100px;
+}
+
+.pageFive h3 {
+    color: #544541;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.pageFive {
+    /*padding-bottom: 100px;*/
+    height: 100vh;
+}
+
+@media (max-width: 700px) {
+
+    .pageFive .text-box h1 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+
+    .pageFive {
+        height: auto;
+    }
+
+    .pageFive h3 {
+        color: #544541;
+        font-size: 18px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .pageFive .text-box h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pageFive .row {
+        flex-wrap: wrap;
+    }
+}
+
+/*End of Page 5 page css */
+
+/*Page 6 css */
+
+.pageSix {
+height: 80vh;
+    background: #ECEADA;
+}
+
+.pageSix-content {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.pageSix-col {
+    width: 100%;
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #544541;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
+}
+
+@media (max-width: 700px) {
+
+    .pageSix h1 {
         font-size: 40px;
     }
+}
 
-    .container button {
+@media (max-width: 500px) {
+
+    .pageSix h1 {
+        font-size: 30px;
+    }
+}
+
+/*End of Page 6 page css */
+
+/*Page 7 css */
+.pageSeven {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+    height: 80vh;
+}
+
+.pageSevenText-col {
+    flex-basis: 50%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pageSevenText img {
+    width: 100%;
+    display: block;
+}
+
+.pageSevenText h2 {
+    font-size: 30px;
+    color: #473C38;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.pageSevenText h3 {
+    font-size: 20px;
+    color: #473C38;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+@media (max-width: 700px) {
+
+    .pageSeven h1 {
+        font-size: 30px;
+        text-wrap: normal;
+    }
+
+    .pageSevenText h2 {
+        font-size: 20px;
+    }
+
+    .pageSevenText h3 {
         font-size: 15px;
     }
 }
 
-.second {
-    background: #ECEADA;
-}
-
-.second .container h2 {
-    width: 100%;
-    text-align: left;
-    font-size: 72px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.second .container p {
-    margin-top: 20px;
-    font-size: 20px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-    color: #544541;
-    line-height: 2;
-
-}
-
-.col-image {
-    margin-top: 100px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-}
-
-.col-image img {
-    margin-bottom: 50px;
-
-}
-
-/*   second page responsive   */
-
-
-@media (max-width: 700px) {
-
-    .second .container h2 {
-        width: 100%;
-        text-align: left;
-        font-size: 40px;
-        word-spacing: 1px;
-        letter-spacing: 1px;
-
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-    }
-
-    .second .container p {
-        margin-top: 20px;
-        font-size: 18px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-        line-height: 1;
-
-    }
-}
-
-
-/*second page css */
-.responsive-grid {
-    display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 200px;
-
-}
-
-.grid-item {
-    padding: 20px;
-    text-align: center;
-    color: #544541;
-}
-
-.page-3 .container h2 {
-    color: #735E59;
-}
-
-.page-3 .container h1 {
-    margin-top: 50px;
-    font-size: 50px;
-}
-
-@media (max-width: 1050px) {
-    .responsive-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 100px;
-    }
-}
-
-@media (max-width: 700px) {
-    .responsive-grid {
-        grid-template-columns: 1fr;
-        margin-top: 30px;
-    }
-
-    .page-3 .container h1 {
-        font-size: 40px;
-    }
-
-}
-
-
-/*Fourth page css */
-/*page 5 css */
-
-
-.page-4 {
-    background-color: #ECEADA;
-}
-
-.page-4 .responsive-grid, .page-5 .responsive-grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 200px;
-}
-
-.page-4 .grid-item, .page-5 .grid-item {
-    padding: 20px;
-    text-align: left;
-    color: #544541;
-    font-size: 30px;
-}
-
-.page-4 .container h1, .page-5 .container h1, .page-6 .container h1, .page-7 .container h1 {
-    margin-top: 50px;
-    font-size: 50px;
-}
-
-
-.page-4 .container .grid-item p {
-
-    text-align: center;
-}
-
-.page-6 .container .row {
-    margin-top: 250px;
-
-}
-
-@media (max-width: 1450px) {
-    .page-4 .responsive-grid, .page-5 .responsive-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 70px;
-    }
-
-    .page-6 .container .row {
-        margin-top: 40px;
-    }
-
-}
-
-@media (max-width: 900px) {
-    .page-4 .responsive-grid, .page-5 .responsive-grid {
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 60px;
-    }
-
-    .page-6 .container .row {
-        margin-top: 40px;
-    }
-
-    .page-4 .container h1, .page-5 .container h1, .page-6 .container h1, .page-7 .container h1 {
-        font-size: 40px;
-    }
-
-    .page-4 .container .grid-item p, .page-5 .container .grid-item p {
-        font-size: 20px;
-    }
-
-
-
-
-}
-
-/*page 5 css */
-.page-5 .container .grid-item p {
-    text-align: left;
-    font-size: 20px;
-}
-
-/*-------page 6 css------- */
-.page-6 {
-    background-color: #ECEADA;
-}
-
-.page-6 .container .row .col {
-    border: 1px solid black;
-    text-align: center;
-    font-size: 20px;
-    color: #544541;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-6 .container .row p {
-    line-height: 1;
-    word-spacing: 3px;
-    letter-spacing: 3px;
-    padding: 20px;
-}
-
-.page-6 .container .row h3 {
-    padding: 20px;
-
-}
-
-@media (max-width: 1050px) {
-
-    .page-6 .container .row col {
-        flex-direction: row;
-    }
-
-}
-
-/*page 7 */
-
-
-.page-7 .container .row .col {
-    margin-top: 100px;
-    width: 100%;
-    width: 700px;
-}
-
-.page-7 .container .row .col h3 {
-    color: #544541;
-    text-transform: capitalize;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-    word-spacing: 3px;
-    margin-bottom: 10px;
-}
-
-.page-7 .container .row .col {
-    color: #544541;
-    font-size: 1.2rem;
-
-}
-
-@media (max-width: 700px) {
-    .page-7 .container .row .col {
-        width: 90%;
-        margin-top: 50px;
-
-    }
-
-    .page-7 .container .row .col h3 {
-        font-size: 1.4rem;
-        margin-top: 10px;
-    }
-
-    .page-7 .container .row .col {
-        color: #544541;
-        font-size: 1rem;
-    }
-    .page-7 .container .row .col  {
-        width: 200px ;
-    }
-
-    img{
-        width: 200px ;
-    }
-
-    .page-4 .container .grid-item , .page-5 .container .grid-item  , .page-5 .container h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .page-6 .container .row{
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .page-6 .container {
-
-        margin: 0;
-
-    }
-
-    .page-6 .container .row .col {
-         font-size: 1rem;
-        padding: 20px 20px;
-    }
-
-    .container{
-        margin:  0 ;
-    }
-}
-
+/*End of Page 7 page css */
