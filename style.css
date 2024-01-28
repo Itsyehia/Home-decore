@@ -361,7 +361,9 @@ nav .fa-times {
         font-size: 40px;
         padding-top: 100px;
     }
-
+.pageFour{
+    height: auto;
+}
     .pageFour {
         height: auto;
     }
@@ -447,6 +449,9 @@ nav .fa-times {
     .pageFive .row {
         flex-wrap: wrap;
     }
+     .pageFive  {
+        height: auto;
+    }
 }
 
 /*End of Page 5 page css */
@@ -483,6 +488,10 @@ height: 80vh;
     .pageSix h1 {
         font-size: 40px;
     }
+    .pageSix {
+height: auto;
+    background: #ECEADA;
+}
 }
 
 @media (max-width: 500px) {
@@ -500,7 +509,7 @@ height: 80vh;
     margin: auto;
     text-align: left;
     padding-top: 50px;
-    height: 80vh;
+    height: auto;
 }
 
 .pageSevenText-col {
